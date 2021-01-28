@@ -8,6 +8,7 @@ namespace FactoryMethod.Common.Sql
 
         // The factory method.
         // It allow us to work with different types of objects by using a single interface.
+        // Each new concrete creator brings you closer and closer to the abstract factory.
         public abstract IDbConnection CreateDatabaseConnection();
 
         public IDataReader ExecuteAsDataReader()
