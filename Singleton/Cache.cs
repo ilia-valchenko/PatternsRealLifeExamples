@@ -8,6 +8,11 @@ namespace Singleton
     // 3. The class has a static variable which holdes a reference to an instance;
     // 4. The class has a public static getter.
 
+    // The following techniques are used in opposite to Singleton:
+    // 1. Registry
+    // 2. Service Locator
+    // 3. Dependency Injection
+
     // The implementation below isn't as lazy, but thread-safe without using locks.
     public class Cache
     {
