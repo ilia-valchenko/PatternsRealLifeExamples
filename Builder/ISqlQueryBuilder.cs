@@ -12,6 +12,8 @@ namespace Builder
 
         void BuildLimit(int start, int offset);
 
+        // The GetResult method can return an interface or an abstract class
+        // if the products have the same interface.
         string GetResult();
     }
 }
