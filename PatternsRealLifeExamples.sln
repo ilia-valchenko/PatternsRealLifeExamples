@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{51185C40-685A-4168-A9CC-5A2977F7150D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{FA86F11E-6F17-4F60-A010-18E34E2FE6B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{FA86F11E-6F17-4F60-A010-18E34E2FE6B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{36238074-B07F-4B4E-97A7-47A8FC7CFE12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FA86F11E-6F17-4F60-A010-18E34E2FE6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA86F11E-6F17-4F60-A010-18E34E2FE6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA86F11E-6F17-4F60-A010-18E34E2FE6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36238074-B07F-4B4E-97A7-47A8FC7CFE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36238074-B07F-4B4E-97A7-47A8FC7CFE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36238074-B07F-4B4E-97A7-47A8FC7CFE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36238074-B07F-4B4E-97A7-47A8FC7CFE12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
