@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace Composite.ClassicImplementation
+namespace Composite
 {
-    public class Composite : IComponent
+    public class Directory : IComponent
     {
         private readonly List<IComponent> children = new List<IComponent>();
+
+        public string DirectoryName { get; set; }
 
         public void Add(IComponent component)
         {
@@ -16,10 +18,16 @@ namespace Composite.ClassicImplementation
             this.children.Remove(component);
         }
 
-        public void Execute()
+        public int GetSizeInKb()
         {
-            // Uses recursion for calling the Execute method for all children.
-            // Or foreach children.Execute().
+            int totalSize = 0;
+
+            foreach (var item in this.children)
+            {
+                totalSize += item.GetSizeInKb();
+            }
+
+            return totalSize;
         }
     }
 }
