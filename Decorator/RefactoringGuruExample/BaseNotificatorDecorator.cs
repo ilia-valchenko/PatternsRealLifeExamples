@@ -3,7 +3,8 @@
 namespace Decorator.RefactoringGuruExample
 {
     // Sometimes the Decorator is called Wrapper.
-    // It has the same interface as wrapee has.
+    // It implements the same repository as wrapee implements, but
+    // the decorator inself provides an extended interface.
     public abstract class BaseNotificatorDecorator : INotificator
     {
         protected readonly INotificator wrapee;
