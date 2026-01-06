@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Adapter
+namespace Adapter.Example1
 {
     public class RandomGenerator
     {

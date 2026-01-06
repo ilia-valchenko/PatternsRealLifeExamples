@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Adapter
+namespace Adapter.Example1
 {
     public class SequenceGenerator
     {
@@ -15,7 +15,7 @@ namespace Adapter
         {
             for (int i = 0; i < length; i++)
             {
-                yield return this.generator.GenerateNext();
+                yield return generator.GenerateNext();
             }
         }
     }

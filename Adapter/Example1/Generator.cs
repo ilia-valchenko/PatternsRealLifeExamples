@@ -1,4 +1,4 @@
-﻿namespace Adapter
+﻿namespace Adapter.Example1
 {
     public class Generator : IGenerator
     {
@@ -6,12 +6,12 @@
 
         public Generator()
         {
-            this.index = 0;
+            index = 0;
         }
 
         public Generator(int startIndex)
         {
-            this.index = startIndex;
+            index = startIndex;
         }
 
         public int GenerateNext()

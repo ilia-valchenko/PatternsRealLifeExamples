@@ -1,7 +1,8 @@
-﻿namespace Adapter
+﻿namespace Adapter.Example1
 {
     // Note: Wraps incompatible object.
     // Allows the interface of an existing class to be used as another interface.
+    // We do not modify the source code of the original class.
 
     // The Adapter pattern is based on composition.
     // It wraps only one class.
@@ -9,7 +10,7 @@
     {
         public int GenerateNext()
         {
-            return this.GenerateRandomNumber();
+            return GenerateRandomNumber();
         }
     }
 }

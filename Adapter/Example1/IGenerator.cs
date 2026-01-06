@@ -1,4 +1,4 @@
-﻿namespace Adapter
+﻿namespace Adapter.Example1
 {
     public interface IGenerator
     {
