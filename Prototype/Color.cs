@@ -6,27 +6,27 @@ namespace Prototype
     // It delegates the work (copying) to the object.
     public class Color : BaseColor
     {
-        private int red;
-        private int green;
-        private int blue;
+        private readonly int _red;
+        private readonly int _green;
+        private readonly int _blue;
 
         public Color()
         {
-            this.red = 0;
-            this.green = 0;
-            this.blue = 0;
+            _red = DefaultRed;
+            _green = DefaultGreen;
+            _blue = DefaultBlue;
         }
 
         public Color(int red, int green, int blue)
         {
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
+            _red = red;
+            _green = green;
+            _blue = blue;
         }
 
         public override BaseColor Clone()
         {
-            return new Color(this.red, this.green, this.blue);
+            return new Color(_red, _green, _blue);
         }
 
         public override string GetColorHexCode()
