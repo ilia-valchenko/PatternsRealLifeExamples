@@ -14,57 +14,57 @@ namespace Singleton
     // 3. Dependency Injection
 
     // The implementation below isn't as lazy, but thread-safe without using locks.
-    public class Cache
+    public sealed class Cache<TValue> where TValue : class
     {
-        private static readonly Cache instance;
-        private Dictionary<string, object> items;
+        private static readonly Cache<TValue> _instance;
+        private readonly Dictionary<string, TValue> _items;
 
         static Cache()
         {
-            instance = new Cache();
+            _instance = new Cache<TValue>();
         }
 
         private Cache()
         {
-            this.items = new Dictionary<string, object>();
+            _items = new Dictionary<string, TValue>();
         }
 
-        public static Cache Instance
+        public static Cache<TValue> Instance
         {
             get
             {
-                return instance;
+                return _instance;
             }
         }
 
-        public void Add(string key, object value)
+        public void Add(string key, TValue value)
         {
-            this.items.Add(key, value);
+            _items.Add(key, value);
         }
 
-        public void TryAdd(string key, object value)
+        public void TryAdd(string key, TValue value)
         {
-            if (this.items.ContainsKey(key))
+            if (_items.ContainsKey(key))
             {
                 return;
             }
 
-            this.items.Add(key, value);
+            _items.Add(key, value);
         }
 
-        public T Get<T>(string key) where T : class
+        public TValue Get(string key)
         {
-            return this.items[key] as T;
+            return _items[key];
         }
 
-        public T TryGet<T>(string key) where T : class
+        public TValue TryGet(string key)
         {
-            if (!this.items.ContainsKey(key))
+            if (!_items.ContainsKey(key))
             {
                 return null;
             }
 
-            return this.items[key] as T;
+            return _items[key];
         }
     }
 }
