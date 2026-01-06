@@ -1,4 +1,6 @@
-﻿namespace Prototype
+﻿using Prototype.Interfaces;
+
+namespace Prototype
 {
     public abstract class BaseColor : IPrototype<BaseColor>
     {
