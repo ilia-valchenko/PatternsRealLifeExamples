@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using Builder.Enums;
 
-namespace Builder
+namespace Builder.Interfaces
 {
     // You can use the Builder when you want to avoid a huge constructor
     // that has a lot of parameters.
-    public interface ISqlQueryBuilder
+    public interface IQueryBuilder
     {
         void BuildSelect(string tableName, IList<string> columns);
 

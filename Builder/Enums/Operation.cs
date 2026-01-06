@@ -1,4 +1,4 @@
-﻿namespace Builder
+﻿namespace Builder.Enums
 {
     public enum Operation
     {

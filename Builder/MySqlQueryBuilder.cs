@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Builder.Enums;
+using Builder.Interfaces;
 
 namespace Builder
 {
-    public class MySqlQueryBuilder : ISqlQueryBuilder
+    public class MySqlQueryBuilder : IQueryBuilder
     {
         public void BuildLimit(int start, int offset)
         {
