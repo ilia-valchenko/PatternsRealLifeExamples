@@ -19,11 +19,16 @@ namespace Singleton
         private static readonly Cache<TValue> _instance;
         private readonly Dictionary<string, TValue> _items;
 
+        // Note: Access modifiers are not allowed on static constructors.
+        // It is automatically invoked by the CLR.
+        // It's called automatically before the first instance is created or any static members are referenced.
+        // A static constructor is called at most once.
         static Cache()
         {
             _instance = new Cache<TValue>();
         }
 
+        // Private instance parameterless constructor.
         private Cache()
         {
             _items = new Dictionary<string, TValue>();
