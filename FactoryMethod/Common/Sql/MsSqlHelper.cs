@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 
 namespace FactoryMethod.Common.Sql
 {
-    public class MsSqlHelper : Helper
+    public class MsSqlHelper : DatabaseHelper
     {
         public override IDbConnection CreateDatabaseConnection()
         {

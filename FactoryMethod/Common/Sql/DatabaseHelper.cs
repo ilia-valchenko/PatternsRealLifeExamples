@@ -2,7 +2,7 @@
 
 namespace FactoryMethod.Common.Sql
 {
-    public abstract class Helper
+    public abstract class DatabaseHelper
     {
         public string Query { get; set; }
 

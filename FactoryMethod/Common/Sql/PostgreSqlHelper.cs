@@ -3,7 +3,7 @@ using Npgsql;
 
 namespace FactoryMethod.Common.Sql
 {
-    public class PostgreSqlHelper : Helper
+    public class PostgreSqlHelper : DatabaseHelper
     {
         public override IDbConnection CreateDatabaseConnection()
         {
