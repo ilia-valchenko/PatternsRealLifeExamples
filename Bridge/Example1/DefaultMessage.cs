@@ -1,8 +1,8 @@
 ﻿using System;
-using Bridge.Message;
-using Bridge.MessageSender;
+using Bridge.Example1.Message.Interfaces;
+using Bridge.Example1.MessageSender.Interfaces;
 
-namespace Bridge
+namespace Bridge.Example1
 {
     public class DefaultMessage : AbstractMessage
     {
@@ -17,7 +17,7 @@ namespace Bridge
                 throw new ArgumentNullException(nameof(message));
             }
 
-            this.Sender.SendMessage(message);
+            Sender.SendMessage(message);
         }
     }
 }

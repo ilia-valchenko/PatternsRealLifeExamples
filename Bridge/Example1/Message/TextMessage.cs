@@ -1,24 +1,25 @@
 ﻿using System.Text;
+using Bridge.Example1.Message.Interfaces;
 
-namespace Bridge.Message
+namespace Bridge.Example1.Message
 {
     public class TextMessage : IMessage
     {
-        private string text;
+        private readonly string _text;
 
         public TextMessage()
         {
-            this.text = string.Empty;
+            _text = string.Empty;
         }
 
         public TextMessage(string text)
         {
-            this.text = text;
+            _text = text;
         }
 
         public byte[] GetBytes()
         {
-            return Encoding.UTF8.GetBytes(this.text);
+            return Encoding.UTF8.GetBytes(_text);
         }
     }
 }

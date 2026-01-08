@@ -1,8 +1,8 @@
 ﻿using System;
-using Bridge.Message;
-using Bridge.MessageSender;
+using Bridge.Example1.Message.Interfaces;
+using Bridge.Example1.MessageSender.Interfaces;
 
-namespace Bridge
+namespace Bridge.Example1
 {
     // The Bridge pattern is based on composition.
     // The Bridge divides a program by two layers: abstraction (like warm and round, cold and square) and realization.
@@ -20,28 +20,28 @@ namespace Bridge
     // * UI - cross-platform framework (we can change the UI without modifying the framework)
     public abstract class AbstractMessage
     {
-        private IMessageSender sender;
+        private IMessageSender _sender;
 
         protected IMessageSender Sender
         {
             get
             {
-                return this.sender;
+                return _sender;
             }
             set
             {
                 if (value == null)
                 {
-                    throw new ArgumentNullException(nameof(this.sender));
+                    throw new ArgumentNullException(nameof(_sender));
                 }
 
-                this.sender = value;
+                _sender = value;
             }
         }
 
-        public AbstractMessage(IMessageSender sender)
+        protected AbstractMessage(IMessageSender sender)
         {
-            this.Sender = sender;
+            Sender = sender;
         }
 
         public abstract void SendMessage(IMessage message);

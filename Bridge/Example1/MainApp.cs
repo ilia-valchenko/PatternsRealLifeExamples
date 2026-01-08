@@ -1,7 +1,7 @@
-﻿using Bridge.Message;
-using Bridge.MessageSender;
+﻿using Bridge.Example1.Message;
+using Bridge.Example1.MessageSender;
 
-namespace Bridge
+namespace Bridge.Example1
 {
     public class MainApp
     {

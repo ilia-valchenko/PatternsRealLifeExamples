@@ -1,6 +1,7 @@
 ﻿using System;
+using Bridge.Example1.Message.Interfaces;
 
-namespace Bridge.Message
+namespace Bridge.Example1.Message
 {
     public class VoiceMessage : IMessage
     {

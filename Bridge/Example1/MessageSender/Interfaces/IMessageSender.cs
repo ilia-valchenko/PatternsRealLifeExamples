@@ -1,6 +1,6 @@
-﻿using Bridge.Message;
+﻿using Bridge.Example1.Message.Interfaces;
 
-namespace Bridge.MessageSender
+namespace Bridge.Example1.MessageSender.Interfaces
 {
     public interface IMessageSender
     {
