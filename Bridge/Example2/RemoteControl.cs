@@ -14,7 +14,7 @@ namespace Bridge.Example2
         {
             this.device = device;
         }
-
+                                                                                                                                 
         public void SetExactChannel(int numberOfChannel)
         {
             if (numberOfChannel <= 0)

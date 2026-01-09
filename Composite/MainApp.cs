@@ -2,6 +2,9 @@
 {
     public class MainApp
     {
+        // Note: The intent of a composite is to "compose" objects into tree structures
+        // to represent part-whole hierarchies. This pattern lets clients treat individual
+        // objects and compositions uniformly.
         public void Main()
         {
             var firstFile = new File();
