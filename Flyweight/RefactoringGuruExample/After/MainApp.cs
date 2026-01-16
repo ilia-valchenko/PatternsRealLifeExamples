@@ -2,6 +2,9 @@
 {
     public class MainApp
     {
+        // Note: Flyweight pattern is all about that i.e. sharing.
+        // It is used to minimize memory usage or computational expenses
+        // by sharing as much as possible with similar objects.
         public void Main()
         {
             var game = new Game();
@@ -15,7 +18,7 @@
                     Speed = 120,
                     Sprite = new Sprite(),
                     Vector = new Vector()
-                }); ;
+                });
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace Flyweight.RefactoringGuruExample
+﻿namespace Flyweight.RefactoringGuruExample.Interfaces
 {
     public interface IUnit
     {

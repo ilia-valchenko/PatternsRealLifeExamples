@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Flyweight.RefactoringGuruExample.Interfaces;
 
 namespace Flyweight.RefactoringGuruExample
 {

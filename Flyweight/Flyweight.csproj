@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="RefactoringGuruExample\Before\" />
+    <Compile Remove="RefactoringGuruExample\Before\**" />
+    <EmbeddedResource Remove="RefactoringGuruExample\Before\**" />
+    <None Remove="RefactoringGuruExample\Before\**" />
   </ItemGroup>
 
 </Project>

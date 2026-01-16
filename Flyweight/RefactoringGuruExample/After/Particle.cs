@@ -1,4 +1,5 @@
 ﻿using System;
+using Flyweight.RefactoringGuruExample.Interfaces;
 
 namespace Flyweight.RefactoringGuruExample.After
 {
