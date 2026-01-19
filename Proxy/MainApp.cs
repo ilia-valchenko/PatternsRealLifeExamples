@@ -1,4 +1,5 @@
 ﻿using System;
+using Proxy.Interfaces;
 
 namespace Proxy
 {

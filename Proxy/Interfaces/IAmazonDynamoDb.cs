@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Proxy
+namespace Proxy.Interfaces
 {
     public interface IAmazonDynamoDb : IDisposable
     {
