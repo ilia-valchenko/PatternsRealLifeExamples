@@ -10,10 +10,11 @@ namespace ChainOfResponsibility.Handlers
         {
             if (amount <= OperationLimit)
             {
-                Console.WriteLine("Done. Bank transaction was successfully completed.");
+                Console.WriteLine("Done. Paypal transaction was successfully completed.");
             }
             else
             {
+                Console.WriteLine("Cannot pay using paypal. Proceeding...");
                 this.nextHandler.HandlePayment(amount);
             }
         }

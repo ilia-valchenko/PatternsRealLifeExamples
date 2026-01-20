@@ -14,7 +14,8 @@ namespace ChainOfResponsibility.Handlers
             }
             else
             {
-                 this.nextHandler.HandlePayment(amount);
+                Console.WriteLine("Cannot pay using bank. Proceeding...");
+                this.nextHandler.HandlePayment(amount);
             }
         }
     }
