@@ -5,6 +5,8 @@ using Command.Example2.Interfaces;
 
 namespace Command.Example2
 {
+    // Note: The idea is to decouple the sender from the receiver.
+    // It allows requests to be queued, logged, parameterized, or undone/redone.
     public class MainApp
     {
         public void Main()
