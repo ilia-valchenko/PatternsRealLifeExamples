@@ -1,4 +1,4 @@
-﻿namespace Interpreter.Interfaces
+﻿namespace Interpreter.Example1.Interfaces
 {
     // Abstract Expression
     public interface IExpression

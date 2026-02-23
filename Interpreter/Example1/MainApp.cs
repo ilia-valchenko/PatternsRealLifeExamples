@@ -1,8 +1,8 @@
 ﻿using System;
-using Interpreter.Expressions;
-using Interpreter.Interfaces;
+using Interpreter.Example1.Expressions;
+using Interpreter.Example1.Interfaces;
 
-namespace Interpreter
+namespace Interpreter.Example1
 {
     public class MainApp
     {

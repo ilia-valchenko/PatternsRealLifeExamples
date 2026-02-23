@@ -1,6 +1,6 @@
-﻿using Interpreter.Interfaces;
+﻿using Interpreter.Example1.Interfaces;
 
-namespace Interpreter.Expressions
+namespace Interpreter.Example1.Expressions
 {
     public class MultiplyExpression : IExpression
     {
