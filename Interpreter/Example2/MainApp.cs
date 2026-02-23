@@ -8,7 +8,7 @@ namespace Interpreter.Example2
     {
         public static void Main()
         {
-            var initialContextInput = "MMVIII";
+            const string initialContextInput = "MMVIII";
             var context = new Context { Input = initialContextInput }; // 2018
 
             var tree = new List<Expression>
@@ -24,7 +24,7 @@ namespace Interpreter.Example2
                 expression.Interpret(context);
             }
 
-            Console.WriteLine($"{context.Input} = {context.Output}");
+            Console.WriteLine($"{initialContextInput} = {context.Output}");
         }
     }
 }
