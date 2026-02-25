@@ -8,6 +8,13 @@ namespace Visitor
 {
     public static class MainApp
     {
+
+        // Note: Visitor Pattern in simple words — it's a way to add new behavior to a group of related objects
+        // without changing the objects themselves.
+
+        // When to use?
+        // * When you need to perform many different operations on objects of a complex structure.
+        // * When the object structure rarely changes, but new operations are added frequently.
         public static void Main()
         {
             var documents = new List<IDocument>
