@@ -15,6 +15,8 @@ namespace Visitor
         // When to use?
         // * When you need to perform many different operations on objects of a complex structure.
         // * When the object structure rarely changes, but new operations are added frequently.
+        // * An object structure contains many classes of objects with differing interfaces and you want to
+        //   perform operations on these objects that depend on their concrete classes.
         public static void Main()
         {
             var documents = new List<IDocument>
